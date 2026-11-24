@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Fudan PPT">
+  <rect x="4" y="8" width="56" height="38" rx="4" fill="#2A5989"/>
+  <rect x="10" y="14" width="30" height="4" rx="2" fill="#FFFFFF" opacity="0.95"/>
+  <rect x="10" y="22" width="20" height="3" rx="1.5" fill="#FFFFFF" opacity="0.65"/>
+  <rect x="10" y="28" width="26" height="3" rx="1.5" fill="#FFFFFF" opacity="0.65"/>
+  <rect x="10" y="34" width="16" height="3" rx="1.5" fill="#FFFFFF" opacity="0.45"/>
+  <circle cx="46" cy="30" r="10" fill="#F2C94C" opacity="0.9"/>
+  <path d="M46 24 L46 36 M40 30 L52 30" stroke="#2A5989" stroke-width="2.4" stroke-linecap="round"/>
+  <rect x="24" y="50" width="16" height="4" rx="2" fill="#2A5989"/>
+</svg>

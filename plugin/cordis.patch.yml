@@ -1,0 +1,4 @@
+- insert:
+    - id: fudan-dppt
+      name: '@local/fudan-dppt'
+      config: {}

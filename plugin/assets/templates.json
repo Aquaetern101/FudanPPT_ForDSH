@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "note": "模板清单：profile 对应 engine/build_deck.py 的版式配置；keywords 用于下一步「文风关键词 → 模板推荐」。 | 第二批正式模板 = FudanPPT第二批母版修正版 的 6 套（profile=master，走 engine/build_master.py） | 本发布版只含第一批 8 套；第二批 b2-1…b2-6 的对应关系见 SECOND-BATCH.md，模板文件需另配 FudanPPT第二批母版修正版 目录。",
+  "templates": [
+    {
+      "id": "meeting",
+      "name": "简约-会议 16:9",
+      "profile": "meeting",
+      "file": "复旦简约-会议16：9.pptx",
+      "ratio": "16:9",
+      "series": "R1 WorkDawn 蓝",
+      "ref": "refs/meeting.png",
+      "status": "ready",
+      "keywords": [
+        "会议",
+        "答辩",
+        "汇报",
+        "正式",
+        "简洁",
+        "深蓝",
+        "边框",
+        "组会",
+        "评审"
+      ],
+      "notes": "浅灰面板 #E7E6E6 + 深蓝细边框；校徽在版式层，标题已避让（详见模板笔记-会议16x9）"
+    },
+    {
+      "id": "crown",
+      "name": "风景-日冕 16:9",
+      "profile": "crown",
+      "file": "复旦风景(日冕)-绿16：9.pptx",
+      "ratio": "16:9",
+      "series": "R3 日冕绿",
+      "ref": "refs/crown.png",
+      "status": "ready",
+      "keywords": [
+        "学术",
+        "科研",
+        "答辩",
+        "绿色",
+        "风景",
+        "稳重",
+        "论文",
+        "课题组"
+      ],
+      "notes": "整页风景图作底，底部深色带；出处压色带用白字"
+    },
+    {
+      "id": "motto",
+      "name": "风景-校训墙 16:9",
+      "profile": "motto",
+      "file": "复旦风景(校训墙)-红16：9.pptx",
+      "ratio": "16:9",
+      "series": "R50 复旦红",
+      "ref": "refs/motto.png",
+      "status": "ready",
+      "keywords": [
+        "校庆",
+        "红色",
+        "典礼",
+        "致辞",
+        "思政",
+        "庄重",
+        "历史"
+      ],
+      "notes": "红色主调，底部深色带；适合仪式性场合"
+    },
+    {
+      "id": "jiangwan",
+      "name": "风景-江湾校区 16:9",
+      "profile": "jiangwan",
+      "file": "复旦风景(江湾校区)-黑16：9.pptx",
+      "ratio": "16:9",
+      "series": "R2 暖琥珀",
+      "ref": "refs/jiangwan.png",
+      "status": "ready",
+      "keywords": [
+        "夜景",
+        "黑金",
+        "论坛",
+        "招聘",
+        "宣讲",
+        "高级",
+        "沉稳"
+      ],
+      "notes": "深色底 + 暖色强调，对比强"
+    },
+    {
+      "id": "xianghuitang",
+      "name": "风景-相辉堂 16:9",
+      "profile": "xianghuitang",
+      "file": "复旦风景(相辉堂)-蓝16：9.pptx",
+      "ratio": "16:9",
+      "series": "R1 WorkDawn 蓝",
+      "ref": "refs/xianghuitang.png",
+      "status": "ready",
+      "keywords": [
+        "人文",
+        "讲座",
+        "蓝色",
+        "校史",
+        "分享会",
+        "清新"
+      ],
+      "notes": "蓝调风景底，适合人文社科分享"
+    },
+    {
+      "id": "laoxiaomen",
+      "name": "风景-老校门 16:9",
+      "profile": "laoxiaomen",
+      "file": "复旦风景(老校门)-紫16：9.pptx",
+      "ratio": "16:9",
+      "series": "R200 紫",
+      "ref": "refs/laoxiaomen.png",
+      "status": "ready",
+      "keywords": [
+        "紫色",
+        "校门",
+        "纪念",
+        "回顾",
+        "总结",
+        "温情"
+      ],
+      "notes": "紫调，适合年度总结、纪念性内容"
+    },
+    {
+      "id": "tpl01",
+      "name": "模板01 几何 16:9",
+      "profile": "tpl01",
+      "file": "复旦模板-01.pptx",
+      "ratio": "16:9",
+      "series": "R1 WorkDawn 蓝（装饰为橙/青）",
+      "ref": "refs/tpl01.png",
+      "status": "ready",
+      "keywords": [
+        "现代",
+        "几何",
+        "撞色",
+        "路演",
+        "创新",
+        "创业",
+        "活泼"
+      ],
+      "notes": "四块斜切色块；标题沿用版式原位。副标题/出处仍会伸进色块，待定"
+    },
+    {
+      "id": "jianyue",
+      "name": "简约-蓝 4:3",
+      "profile": "jianyue",
+      "file": "复旦简约-蓝4：3.pptx",
+      "ratio": "4:3",
+      "series": "R1 WorkDawn 蓝",
+      "ref": "refs/jianyue.png",
+      "status": "held",
+      "keywords": [
+        "4:3",
+        "旧投影",
+        "教室",
+        "板书"
+      ],
+      "notes": "4:3 暂缓：窄栏条形图与小标题排版尚未解决"
+    }
+  ]
+}

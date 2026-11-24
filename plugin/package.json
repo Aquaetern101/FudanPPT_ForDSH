@@ -1,0 +1,29 @@
+{
+  "name": "@local/fudan-dppt",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "把文档/大纲生成为复旦风格叙事 PPT（测试版）",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets/templates.json",
+    "assets/refs/*.png",
+    "engine/build_deck.py",
+    "engine/slides-sciadv.json",
+    "engine/色卡.json",
+    "engine/render_deck.ps1",
+    "engine/make_preview.py",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" }
+  }
+}

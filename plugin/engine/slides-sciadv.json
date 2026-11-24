@@ -1,0 +1,277 @@
+{
+  "deck": {
+    "id": "sciadv-huss-2025",
+    "source": "C-Science+Advances-2025.pdf",
+    "ratio": "16:9",
+    "title": "深度突变扫描引导的宏基因组基序挖掘",
+    "subtitle": "Meta-SIFT 在 T7 受体结合蛋白上的应用",
+    "pages": 13,
+    "spec": "规范-大纲.md + 规范-排版.md",
+    "eyebrow": "SCIENCE ADVANCES  ·  2025"
+  },
+  "slides": [
+    {
+      "n": 1,
+      "kind": "cover",
+      "layout": "cover",
+      "purpose": "深度突变扫描引导的宏基因组基序挖掘",
+      "sub": "Meta-SIFT 在 T7 受体结合蛋白上的应用",
+      "notes": "Huss et al., Sci. Adv. 11, eadt6432 (2025); DOI 10.1126/sciadv.adt6432",
+      "eyebrow": "SCIENCE ADVANCES  ·  2025",
+      "cite": "Huss et al., Sci. Adv. 11, eadt6432 (2025)"
+    },
+    {
+      "n": 2,
+      "kind": "bars",
+      "layout": "bars-3",
+      "purpose": "6 个氨基酸的组合已达 6.4×10⁷，10¹⁴ 量级无法穷举",
+      "bars": [
+        {
+          "label": "6mer",
+          "value": "6.4×10⁷"
+        },
+        {
+          "label": "10mer",
+          "value": "10¹³"
+        },
+        {
+          "label": "合计",
+          "value": ">10¹⁴"
+        }
+      ],
+      "support": "单点突变即可提升活性千倍，值得找；但随机突变与自然传代筛不完这个空间。",
+      "conclusion": "瓶颈已从「能不能改」变成「先改哪一个」。",
+      "notes": "引文 1–3；组合数按每位点 20 种氨基酸估算。"
+    },
+    {
+      "n": 3,
+      "kind": "bars",
+      "layout": "bars-2",
+      "purpose": "同源搜索只找到 85 条序列，远不足以覆盖宏基因组多样性",
+      "bars": [
+        {
+          "label": "BLAST 同源命中",
+          "value": "85"
+        },
+        {
+          "label": "可用结构蛋白",
+          "value": "61,017"
+        }
+      ],
+      "support": "85 条与天然序列差异极小，只能提供极少数替换，且不携带功能信息。",
+      "conclusion": "以相似性为索引，够不着功能未知的远缘序列。",
+      "notes": "fig. S1 A/B。"
+    },
+    {
+      "n": 4,
+      "kind": "figure-full",
+      "layout": "figure-full",
+      "purpose": "以实验功能分数作搜索种子，取代序列相似性",
+      "figure": "fig-crop/fig1ab_p3.png",
+      "support": "seed score 高的位点正落在外环与朝外 β 片层，与已知侵染决定区吻合。",
+      "conclusion": "给序列空间按功能排序，而不是按同源程度排序。",
+      "notes": "seed score = 跨敏感菌取最大 FN，再按跨菌差异与耐药菌救援加权；Fig.1B 热图。",
+      "figure_src": {
+        "pdf": "C-Science+Advances-2025.pdf",
+        "page": 3,
+        "frac": [
+          0.06,
+          0.075,
+          0.95,
+          0.395
+        ],
+        "file": "fig1ab_p3.png"
+      }
+    },
+    {
+      "n": 5,
+      "kind": "process",
+      "layout": "ribbon-4",
+      "purpose": "Meta-SIFT 四步，把实验数据变成可筛选的基序库",
+      "blocks": [
+        {
+          "num": "01",
+          "title": "深度突变扫描",
+          "desc": "1660 个单点替换\n逐位点打分"
+        },
+        {
+          "num": "02",
+          "title": "位置种子打分",
+          "desc": "跨菌取最大 FN\n再按差异加权"
+        },
+        {
+          "num": "03",
+          "title": "宏基因组挖掘",
+          "desc": "61,017 个结构蛋白\n检索 6/10mer"
+        },
+        {
+          "num": "04",
+          "title": "ORACLE 建库",
+          "desc": "芯片合成整库\n植入 T7 筛选"
+        }
+      ],
+      "support": "不限 motif 内突变数；用 HMM 从 NCBI / IMG-VR 筛出可接触受体的结构蛋白，再以丰度阈值控制文库规模。",
+      "conclusion": "四步成环：输入是实验数据，输出是可合成、可筛选的基序库。",
+      "notes": "Fig.1A 原图见 fig-1.png。"
+    },
+    {
+      "n": 6,
+      "kind": "funnel",
+      "layout": "funnel-3",
+      "purpose": "19,109 条基序被筛出，平均与天然型相差 5.28 个突变",
+      "funnel": [
+        {
+          "label": "6mer 候选",
+          "value": "3,411,506"
+        },
+        {
+          "label": "10mer 候选",
+          "value": "166,210"
+        },
+        {
+          "label": "丰度过滤后保留",
+          "value": "19,109"
+        }
+      ],
+      "support": "最终为 15,561 条 6mer 与 3,549 条 10mer；平均与野生型相差 5.28 ± 0.84 个突变。",
+      "conclusion": "留下的不是「近似天然序列」，而是远离天然序列的候选池。",
+      "notes": "data S2。"
+    },
+    {
+      "n": 7,
+      "kind": "numbers",
+      "layout": "numbers-3",
+      "purpose": "17,636 个变体中 24.5% 在至少一个宿主上具活性",
+      "stats": [
+        {
+          "num": "17,636",
+          "label": "可检测变体（92.3%）"
+        },
+        {
+          "num": "20",
+          "label": "宿主与条件"
+        },
+        {
+          "num": "4,328",
+          "label": "至少一个宿主有活性（24.5%）"
+        }
+      ],
+      "support": "芯片合成 19,109 条候选，装入 T7 后 92.3% 可检出；每变体平均携带 5.28 个突变，活性与突变数无显著相关。",
+      "conclusion": "筛选依据应是实测活性，而不是与天然序列的相似度。",
+      "notes": "20 宿主含 BL21、BW25113、10G、3 株尿路致病、7 个 LPS 截短敲除、tonA/tonB 敲除、O121×盐浓度。"
+    },
+    {
+      "n": 8,
+      "kind": "figure-split",
+      "layout": "split-left-text",
+      "purpose": "活性集中于 C β 片层与 BC 外环，而非初始的 DE 环",
+      "bullets": [
+        "初始候选多分布于 DE 外环与 E 片层",
+        "活性变体集中在 C β 片层与 BC 外环",
+        "该区无带电残基、含四个甘氨酸、朝外不参与三聚体稳定"
+      ],
+      "figure": "fig-crop/fig3_p7_r2c2.png",
+      "conclusion": "BC–C 区对大幅改动更耐受，是优先改造的位点。",
+      "notes": "Fig.2F、fig. S3C。",
+      "figure_src": {
+        "pdf": "C-Science+Advances-2025.pdf",
+        "page": 7,
+        "frac": [
+          0.08,
+          0.47,
+          0.93,
+          0.75
+        ],
+        "grid": "2x4",
+        "cell": "r2c2",
+        "file": "fig3_p7_r2c2.png"
+      }
+    },
+    {
+      "n": 9,
+      "kind": "figure-full",
+      "layout": "figure-full",
+      "purpose": "随机化种子后命中数下降 10 倍",
+      "figure": "fig-crop/fig1cd_p3.png",
+      "support": "结构蛋白命中显著多于非结构蛋白；motif 主要来自 Siphoviridae 与 Myoviridae。",
+      "conclusion": "DMS 数据不是装饰，是搜索有效性的来源。",
+      "notes": "整体随机化与按位点随机化各三重复，均值 ± SD。",
+      "figure_src": {
+        "pdf": "C-Science+Advances-2025.pdf",
+        "page": 3,
+        "frac": [
+          0.06,
+          0.385,
+          0.95,
+          0.69
+        ],
+        "file": "fig1cd_p3.png"
+      }
+    },
+    {
+      "n": 10,
+      "kind": "figure-full",
+      "layout": "figure-full",
+      "purpose": "在 O121 高盐条件下，只有基序库能救回活性",
+      "figure": "fig-crop/fig2rescue_p5.png",
+      "support": "野生型与该条件下的单点 DMS 文库均无活性，基序库出现可检测活性。",
+      "conclusion": "解不在天然多样性里，只能从宏基因组中挖出来。",
+      "notes": "fig. S2 D/E。",
+      "figure_src": {
+        "pdf": "C-Science+Advances-2025.pdf",
+        "page": 5,
+        "frac": [
+          0.07,
+          0.645,
+          0.45,
+          0.797
+        ],
+        "file": "fig2rescue_p5.png",
+        "note": "整图是竖幅方图，二次裁切改用底部生长曲线panel"
+      }
+    },
+    {
+      "n": 11,
+      "kind": "bullets",
+      "layout": "bullets-3",
+      "purpose": "方法依赖 DMS 底座，并存在宿主偏置",
+      "bullets": [
+        "新体系需先有其 DMS 数据",
+        "seed 偏置会牺牲部分宿主活性",
+        "仅在 T7 / E. coli 体系验证"
+      ],
+      "conclusion": "可迁移，但迁移成本是每个体系的实验底座。",
+      "notes": "原文 trade-off 段。"
+    },
+    {
+      "n": 12,
+      "kind": "refs",
+      "layout": "refs",
+      "purpose": "参考文献",
+      "refs": [
+        {
+          "runs": [
+            {
+              "t": "Huss, Phil, et al. “Engineering Bacteriophages through Deep Mining of Metagenomic Motifs.” "
+            },
+            {
+              "t": "Science Advances",
+              "i": true
+            },
+            {
+              "t": ", vol. 11, 2025, eadt6432, https://doi.org/10.1126/sciadv.adt6432."
+            }
+          ]
+        }
+      ],
+      "notes": "MLA 9。中文文献标准待补。本文自身作为唯一被引条目保留。"
+    },
+    {
+      "n": 13,
+      "kind": "thanks",
+      "layout": "thanks",
+      "purpose": "致谢",
+      "notes": "封底只放「致谢」，不加标题/副标题/出处。讲稿收尾句：工程化的起点从「找同源」变成「找功能」（与 P2 的 10^14 呼应）。"
+    }
+  ]
+}

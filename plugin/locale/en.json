@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "title": "Fudan Narrative PPT",
+    "description": "Builds Fudan-branded narrative decks from an outline, with template reference images and style-based recommendations (8 templates)."
+  },
+  "tool": {
+    "templates": "List templates and reference images",
+    "recommend": "Recommend templates by style keywords",
+    "build": "Build a deck with a chosen template and render previews"
+  }
+}

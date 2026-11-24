@@ -1,0 +1,110 @@
+{
+  "version": "1.0",
+  "updated": "2026-11-20",
+  "note": "机器可读的唯一色卡来源。色卡.md 与 色卡.png 由 build_palette.py 从本文件生成，勿手改产物。",
+  "base": [
+    {"id": "fudan_red", "name": "复旦红", "hex": "#CC1A1A", "rgb": [204, 26, 26], "role": "品牌强调 / 关键结论", "note": "xls 中未收录，单独作为规范色"},
+    {"id": "footnote_gray", "name": "脚注灰", "hex": "#888888", "rgb": [136, 136, 136], "role": "注记 / 出处", "note": "对白底 3.54，低于 AA 正文；仅用于注记"},
+    {"id": "ink_black", "name": "墨黑", "hex": "#5C5C5C", "rgb": [92, 92, 92], "role": "正文 / 深色底", "note": "即你所说「黑色」，纯黑 #000000 未列入"}
+  ],
+  "series": [
+    {
+      "id": "R1", "name": "R1-WorkDawn", "kind": "make", "source": "色卡.xls",
+      "slots": ["#426B86", "#ABC9D8", "#F0EBDD", "#D7B4B1", "#2D465B"],
+      "slot_names": ["LabourBlue", "DawnMist", "CottonIvory", "RosePaper", "Indiso"],
+      "note": "2026-11-20 按你确认值更正：DawnMist → (171,201,216)=#ABC9D8，RosePaper → (215,180,177)=#D7B4B1；xls 原件未改，以此为准"
+    },
+    {
+      "id": "R2", "name": "R2-SpunGold", "kind": "make", "source": "色卡.xls",
+      "slots": ["#B49349", "#DCC58B", "#F4EDDB", "#BCC4A0", "#655237"],
+      "slot_names": ["Spungold", "WheatSilk", "CottonCream", "PaleSage", "Umber"]
+    },
+    {
+      "id": "R3", "name": "R3-FieldJade", "kind": "make", "source": "色卡.xls",
+      "slots": ["#537B61", "#A8BC8F", "#F1EDD8", "#C8DFCE", "#354C3D"],
+      "slot_names": ["FJ", "RiseSage", "PaperIvory", "WaterMint", "Mineral"]
+    },
+    {
+      "id": "R20", "name": "R20-Palace", "kind": "make", "source": "色卡.xls",
+      "slots": ["#956278", "#C89CAC", "#F1E7DD", "#CDC1D8", "#533D50"],
+      "slot_names": ["PalaceMauve", "LotusRose", "SilkIvory", "MistLilac", "Plum"]
+    },
+    {
+      "id": "R50", "name": "R50-RailWay", "kind": "make", "source": "色卡.xls",
+      "slots": ["#A4565B", "#D49793", "#F1E7DA", "#A6BDCA", "#603D47"],
+      "slot_names": ["RR", "BrickR", "SteamIvory", "DuskB", "Burgundy"]
+    },
+    {
+      "id": "R100", "name": "R100-sail", "kind": "make", "source": "色卡.xls",
+      "slots": ["#B0834E", "#D7BA91", "#F1E7D3", "#A8BAA0", "#415548"],
+      "slot_names": ["SO", "RiverSand", "CanvasCream", "ReedG", "Harbour"]
+    },
+    {
+      "id": "R200", "name": "R200-Wall", "kind": "make", "source": "色卡.xls",
+      "slots": ["#79658E", "#B8A7C9", "#EDE9DD", "#BED3DF", "#4C405E"],
+      "slot_names": ["WV", "HeatherM", "StoneIve", "SkyPaper", "PurpleInk"]
+    },
+    {
+      "id": "T01", "name": "T01-复旦模板-01", "kind": "template", "source": "复旦模板-01.pptx",
+      "slots": ["#00ADEF", "#FFB535", "#FFFFFF", "#567BAE", "#000000"],
+      "confidence": "低", "note": "该模板大量使用 Office 默认色，抽取结果可能混入默认值"
+    },
+    {
+      "id": "T02", "name": "T02-简约-会议", "kind": "template", "source": "复旦简约-会议16：9.pptx",
+      "slots": ["#2C547D", "#667483", "#FFFFFF", null, "#000000"],
+      "confidence": "中", "note": "只找到两个设计色，第三色留空，未强凑"
+    },
+    {
+      "id": "T03", "name": "T03-简约-红", "kind": "template", "source": "复旦简约-红4：3.pptx",
+      "slots": ["#B1192A", null, "#FFFFFF", null, "#000000"],
+      "confidence": "中", "note": "单主色模板"
+    },
+    {
+      "id": "T04", "name": "T04-简约-蓝", "kind": "template", "source": "复旦简约-蓝4：3.pptx",
+      "slots": ["#476490", "#33597F", "#FFFFFF", null, "#000000"],
+      "confidence": "中"
+    },
+    {
+      "id": "T05", "name": "T05-风景-日冕-绿", "kind": "template", "source": "复旦风景(日冕)-绿16：9.pptx",
+      "slots": ["#77943C", "#4F6328", "#FFFFFF", "#576230", "#000000"],
+      "confidence": "高", "note": "矢量层与封面栅格一致"
+    },
+    {
+      "id": "T06", "name": "T06-风景-校训墙-红", "kind": "template", "source": "复旦风景(校训墙)-红16：9.pptx",
+      "slots": ["#F3463C", "#F93025", "#FFFFFF", "#9C260A", "#000000"],
+      "confidence": "高"
+    },
+    {
+      "id": "T07", "name": "T07-风景-江湾校区-黑", "kind": "template", "source": "复旦风景(江湾校区)-黑16：9.pptx",
+      "slots": ["#CE7B0B", "#8E4A07", "#FFFFFF", "#C3B087", "#000000"],
+      "confidence": "低", "note": "主色来自封面照片的暖调，非矢量设计色；名为「黑」但抽到琥珀系"
+    },
+    {
+      "id": "T08", "name": "T08-风景-相辉堂-蓝", "kind": "template", "source": "复旦风景(相辉堂)-蓝16：9.pptx",
+      "slots": ["#0171C5", "#004F8A", "#FFFFFF", "#335899", "#000000"],
+      "confidence": "高"
+    },
+    {
+      "id": "T09", "name": "T09-风景-老校门-紫", "kind": "template", "source": "复旦风景(老校门)-紫16：9.pptx",
+      "slots": ["#7E6CC3", "#68578F", "#FFFFFF", "#7E3A66", "#000000"],
+      "confidence": "高"
+    }
+  ],
+  "rules": {
+    "slot_semantics": {
+      "1": "主色", "2": "次色", "3": "浅底（广义白，作背景/填充）",
+      "4": "第三色（对比用）", "5": "深字（广义黑，作文字/描边）"
+    },
+    "contrast": {
+      "when": "柱状图等依赖色彩区分的图，且分类数 >= 4",
+      "pick": "按系顺序、系内 1→2→4 位抽取，跨系循环",
+      "example": "4 类：R1-1, R1-2, R1-4, R2-1；6 类：R1-1, R1-2, R1-4, R2-1, R2-2, R2-4"
+    },
+    "monochrome": {
+      "when": "不强调对比，或分类数 < 4",
+      "pick": "同一系内顺序调用 1→2→4→3→5",
+      "constraint": "3 位与 5 位（白/黑）不得直接相邻使用"
+    },
+    "reserve": { "3": "不用于数据系列", "5": "不用于大面积填充" }
+  }
+}
